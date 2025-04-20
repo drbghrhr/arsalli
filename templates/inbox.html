@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>رسائلك</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .message { border: 1px solid #ddd; padding: 10px; margin: 10px; text-align: right; }
+    </style>
+</head>
+<body>
+    <h1>📨 رسائلك المجهولة</h1>
+    {% for msg in messages %}
+        <div class="message">
+            <strong>{{ msg[3] }}</strong> ({{ msg[2] }})<br>
+            {{ msg[1] }}
+        </div>
+    {% endfor %}
+</body>
+</html>

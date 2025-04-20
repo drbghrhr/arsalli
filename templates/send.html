@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>إرسال رسالة إلى {{ recipient }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        textarea { width: 300px; height: 100px; }
+        button { padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>إرسال رسالة إلى {{ recipient }}</h1>
+    <form method="POST">
+        <input type="text" name="alias" placeholder="لقبك (اختياري)"><br>
+        <textarea name="message" placeholder="اكتب رسالتك هنا..." required></textarea><br>
+        <button type="submit">إرسال 🚀</button>
+    </form>
+</body>
+</html>
